@@ -1,0 +1,47 @@
+.price {
+  margin-bottom: 10rem;
+  &__items {
+    display: grid;
+    grid-template-columns:  repeat(3,1fr);
+    gap: 2.5rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 4.3rem 0;
+    // justify-content: center;
+    align-items: center;
+    width: 45rem;
+    border: 3px solid $secondary;
+
+    &-title {
+      @include font($f28, $lh56, bold, $primary);
+      @include familySecond;
+      margin-bottom: 2rem;
+    }
+
+    &-link {
+      width: 22rem;
+      padding: .8rem 0;
+    }
+  }
+
+  &__cost {
+    margin-bottom: 2rem;
+    @include font($f24, $lh48, bold, $secondary);
+    @include familySecond;
+  }
+
+  &__benefits {
+    display: flex;
+    flex-direction: column;
+    // text-align: center;
+    margin-bottom: 4rem;
+
+    &-item {
+      font-size: 1.8rem;
+      line-height: 3.6rem;
+    }
+  }
+}

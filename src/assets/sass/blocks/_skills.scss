@@ -1,0 +1,25 @@
+.skills{
+  &__items{
+    @include flex($sb);
+    text-align: center;
+  }
+  &__item{
+    max-width: 32rem;
+    margin-right: 4rem;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__img{
+    margin-bottom: 5rem;
+  }
+  &__item-title{
+font-weight: bold;
+line-height: 4rem;
+margin-bottom: 2rem;
+  }
+  &__text{
+font-size: 1.8rem;
+line-height: 3.6rem;
+  }
+}

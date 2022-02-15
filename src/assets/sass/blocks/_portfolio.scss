@@ -1,0 +1,58 @@
+.portfolio {
+
+  &__links {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  &__link {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid $secondary;
+    padding: .8rem 0;
+    width: 22rem;
+    color: $secondary;
+
+    transition: all .3s;
+
+    &:hover {
+      // border: 1px solid $secondary;
+      background: $secondary;
+      color: $primary;
+    }
+    &:active{
+      background: $secondary;
+      color: $third;
+    }
+  }
+  // &__items{
+  //   max-width: 140rem;
+  //   display: flex;
+  //   justify-content: center;
+  //   flex-wrap: wrap;
+  //   margin: -1.25rem;
+  // }
+  // &__item{
+  //   display: flex;
+  //   padding: 1.25rem;
+  //   flex: 0 0 33.33%;
+    
+  //   &-image{
+  //     max-width: 100%;
+  //   }
+  // }
+  &__items{
+    max-width: 140rem;
+    display: grid;
+    grid-template-columns:  repeat(3,1fr);
+    gap: 2.5rem;
+  }
+  &__item{
+    display: flex;
+    
+    &-image{
+      max-width: 100%;
+    }
+  }
+
+}

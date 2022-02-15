@@ -1,0 +1,31 @@
+.footer {
+  &__items {
+    min-height: 15rem;
+    @include flex($sb);
+    align-items: center;
+  }
+
+  &__item {
+    &:first-child {
+      display: flex;
+      // max-width: 18rem;
+      // margin-right: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 50px;
+
+    &:first-child {
+      // max-width: 18rem;
+      margin-right: 2rem;
+    }
+  }
+
+  &__link {
+    margin-right: 2rem;
+  }
+
+  &__social {}
+}

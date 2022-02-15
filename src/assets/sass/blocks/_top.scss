@@ -1,0 +1,23 @@
+.top{
+background: url(../../assets/img/bg-top.jpg) no-repeat top center;
+background-size: cover;
+min-height: 91rem;
+padding-top: 9rem;
+
+  &__items{
+    padding: 16rem 0 4rem 6rem;
+    max-width: 47rem;
+  }
+  &__title{
+  @include familySecond;
+    @include font($f60, $lh120, bold, $primary);
+    margin-bottom: 4.5rem;
+  }
+  &__text{
+    @include font($f20, $lh40, normal, $primary);
+    margin-bottom: 2.5rem;
+  }
+  &__link{
+    padding: .8rem 7rem;
+  }
+}

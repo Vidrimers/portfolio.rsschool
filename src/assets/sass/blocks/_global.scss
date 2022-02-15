@@ -1,0 +1,74 @@
+body {
+  @include familyPrime;
+  @include font($f20, $lh24, 400, $primary);
+  background: $third;
+}
+
+img{
+  max-width: 100%;
+}
+
+a {
+  color: $primary;
+  transition: color .3s;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.container {
+  max-width: 140rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  background: $secondary;
+  // width: 22rem;
+  // height: 5.5rem;
+  line-height: 4rem;
+  color: $third;
+  text-align: center;
+
+  transition: color .3s;
+
+  &:hover {
+    // border: 1px solid $secondary;
+    // background: transparent;
+    color: $primary;
+  }
+}
+
+.title {
+  // display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include familySecond;
+  @include font($f40, $lh80, bold, $secondary);
+  margin: 10rem auto 6rem;
+  text-align: center;
+  max-width: 70rem;
+  z-index: 1;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    flex: 1 1 auto;
+    // width: 26.7rem;
+    height: 0.2rem;
+    background: $secondary;
+  }
+
+  &::before {
+    margin-right: 2rem;
+  }
+
+  &::after {
+    margin-left: 2rem;
+  }
+
+}

@@ -1,0 +1,49 @@
+.contacts {
+  padding-top: 6rem;
+
+  background: url(../../assets/img/contacts.jpg) no-repeat top center;
+  background-size: cover;
+  // min-height: 70rem;
+  height: 100%;
+
+  // padding-top: 9rem;
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    @include font($f40, $lh80, bold, $secondary);
+@include familySecond;
+    margin-bottom: 6rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 45rem;
+  }
+
+  &__item {
+    background: transparent;
+    border: .2rem solid $secondary;
+    margin-bottom: 2rem;
+    padding: 2rem 0 2rem 2rem;
+    width: 45rem;
+    color: $secondary;
+    font-size: 20px;
+  line-height: 40px;
+&::placeholder{
+  font-size: 20px;
+  line-height: 40px;
+  color: $secondary;
+}
+    &-link {
+      width: 22rem;
+      line-height: 40px;
+      margin-top: 3rem;
+      padding: .8rem 0;
+    }
+  }
+
+}
