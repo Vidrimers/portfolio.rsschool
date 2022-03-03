@@ -1,35 +1,55 @@
-.header{
+.header {
   position: relative;
-  &__wrapper{
+
+  &__wrapper {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
   }
-  &__inner{
+
+  &__inner {
     @include flex($sb);
     align-items: center;
-    
+
     margin: 2rem 0;
   }
-  
-  &__lang{
+
+  &__lang {
     margin-left: 3rem;
-    span{
+
+    span {
       color: $secondary;
+    }
+
+    &-menu {
+      display: none;
+
+      margin-left: 3rem;
+
+      span {
+        color: $secondary;
+      }
     }
   }
 }
-.menu{
+
+.menu {
   margin-left: auto;
 
-  &__btn{
+  &__btn {
     display: none;
+    position: relative;
+    width: 3.5rem;
+    height: 2.4rem;
+
   }
-  &__list{
+
+  &__list {
     display: flex;
   }
-  &__item{
+
+  &__item {
     margin-left: 3rem;
   }
 }

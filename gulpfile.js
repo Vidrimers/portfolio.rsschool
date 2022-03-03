@@ -64,12 +64,17 @@ const path = {
 
 /* Tasks */
 function browserSync(done) {
-    browsersync.init({
-        server: {
-            baseDir: "./dist/"
-        },
-        port: 3000
-    });
+  browsersync.init({
+    server: {
+      baseDir: "./dist/"
+    },
+    ui: {
+      port: 333
+    },
+    port: 666,
+    // tunnel: true,
+    tunnel: "yaro"
+  });
 }
 
 function browserSyncReload(done) {

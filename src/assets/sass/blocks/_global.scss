@@ -1,3 +1,14 @@
+// .top,
+.skills,
+.portfolio,
+.video,
+.price,
+.contacts,
+.footer
+{
+// display: none;
+}
+
 body {
   @include familyPrime;
   @include font($f20, $lh24, 400, $primary);
